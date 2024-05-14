@@ -33,10 +33,6 @@ for i in range(len(paths)):
     with open(paths[i], "r") as f:
         data = data + "\n" + f.read()
 
-# Save the string of all files in nearBlog.txt file
-with open(os.path.join(os.path.dirname(__file__), 'nearBlog.txt'), "w") as f:
-    f.write(data)
-
 n = len(data)
 # train val split
 train_data = data[:int(n*0.9)] #90%
