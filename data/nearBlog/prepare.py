@@ -4,7 +4,7 @@ import tiktoken
 import numpy as np
 from pathlib import Path
 
-filepath = "/Users/juliencarbonnell/Desktop/nearData/nearBlog/"
+filepath = "/Users/juliencarbonnell/Desktop/nearData/nearBlog"
 paths = [str(x) for x in Path(filepath).glob("**/*")]
 data = ""
 
